@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Einkommensteuer-Rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <article>
+            <h1>Einkommensteuer-Rechner</h1>
+            <form action="">
+                <label for="jahr">Bitte Jahr auswählen:</label>
+                <select name="" id="jahr">
+                    <option value="1">2018</option>
+                    <option value="2">2019</option>
+                    <option value="3">2020</option>
+                </select>
+                <label for="paar">Alleine oder Splitting?</label>
+                <label for="allein">Alleine:</label>
+                <input type="radio" name="paar" id="allein" onclick="hide()" checked>
+                <label for="paar">Splitting:</label>
+                <input type="radio" name="paar" id="paar" onclick="show()">
+                <label for="zvE1" id="labelPerson1">zvE Person 1:</label>
+                <input type="number" name="zvE1" id="person1">
+                <label for="zvE2" id="labelPerson2">zvE Person 2:</label>
+                <input type="number" name="zvE2" id="person2">
+                <label for="zvE">zvE:</label>
+                <input type="number" name="zvE" id="zvE">
+                <input type="button" value="Berechnen" onclick="berechne()">
+                <input type="button" value="Zurücksetzen" onclick="zurück()">
+            </form>
+            <h1>Einkommensteuer beträgt:</h1>
+            <h1 id="output"></h1>
+        </article>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(35deg, #3b3b3b 0%, #c0c0c0 50%)
+}
+article{
+    width: 300px;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 10px;
+    background: #fcf6ef;
+}
+select{
+    margin-bottom: 10px;
+}
+label:nth-of-type(2){
+    display: block;
+    margin-bottom: 10px;
+}
+#labelPerson1{
+    margin-top: 10px;
+    display: none;
+}
+#person1{
+    display: none;
+}
+#labelPerson2{
+    display: none;
+}
+#person2{
+    display: none;
+}
+label:last-of-type{
+    display: block;
+    margin: 10px 0;
+}
+#zvE{
+    display: block;
+    margin-bottom: 20px;
+}
+input:nth-last-of-type(1) {
+    background: #ED3833;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    color: #fff;
+}
+input:nth-last-of-type(1):focus{
+    outline:0;
+}
+input:nth-last-of-type(1):hover{
+    transform: scale(1.05);
+}
+input:nth-last-of-type(2) {
+    background: #39811D;
+    border: 1px solid #333;
+    padding: 5px 25px;
+    color: #fff;
+    margin: 0 10px 0 30px;
+}
+input:nth-last-of-type(2):focus{
+    outline:0;
+}
+input:nth-last-of-type(2):hover{
+    transform: scale(1.05);
+}
+h1{
+    text-align: center;
+}
+h1:nth-of-type(1){
+    font-size: 1.5rem;
+}
+#allein{
+    margin-right: 20px;
+}
