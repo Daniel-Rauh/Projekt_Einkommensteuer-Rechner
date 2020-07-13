@@ -19,9 +19,17 @@ function zurück() {
     document.getElementById("zvE").value = ""
     document.getElementById("person1").value = ""
     document.getElementById("person2").value = ""
+    document.getElementById("footer").innerHTML = ""
+    if (document.getElementById("paar").checked == true) {
+        document.getElementById("zvE").placeholder = "automatisch"
+    } else {
+        document.getElementById("zvE").placeholder = ""
+    }
+    
 }
 function berechne() {
     let paar = document.getElementById("paar").checked
+    document.getElementById("footer").innerHTML = "Einkommensteuer beträgt:"
     if (paar == true) {
         berechnePaar()
     } else {
