@@ -41,7 +41,9 @@ function berechneAlleine() {
     let est
     let zve = document.getElementById("zvE").value
     let jahr = document.getElementById("jahr").value
-    if ((jahr == 1) && (zve <= 9000)) {
+    if (zve <= 0) {
+        document.getElementById("output").innerHTML = "Bitte geben Sie einen positiven Wert an"
+    } else if ((jahr == 1) && (zve <= 9000)) {
         document.getElementById("output").innerHTML = "0€"
     } else if ((jahr == 1) && (zve >= 9001) && (zve <= 13996)) {
         y = (zve - 9000) / 10000
@@ -100,7 +102,9 @@ function berechnePaar() {
     let y
     let est
     let jahr = document.getElementById("jahr").value
-    if ((jahr == 1) && (zve <= 9000)) {
+    if (zve <= 0) {
+        document.getElementById("output").innerHTML = "Bitte geben Sie einen positiven Wert an"
+    } else if ((jahr == 1) && (zve <= 9000)) {
         document.getElementById("output").innerHTML = "0€"
     } else if ((jahr == 1) && (zve >= 9001) && (zve <= 13996)) {
         y = (zve - 9000) / 10000
